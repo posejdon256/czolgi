@@ -8,5 +8,8 @@ namespace IndividualProjectClasses.Objects.PowerUps
 {
     class Granat : PowerUp
     {
+        public Granat(short posX, short posY) : base(posX, posY)
+        {
+        }
     }
 }

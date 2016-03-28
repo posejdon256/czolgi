@@ -8,5 +8,8 @@ namespace IndividualProjectClasses.Objects.PowerUps
 {
     class Zycie : Element
     {
+        public Zycie(short posX, short posY) : base(posX, posY)
+        {
+        }
     }
 }

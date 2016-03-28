@@ -8,5 +8,9 @@ namespace IndividualProjectClasses.Objects
 {
     public class NiezniszczalnyMur : Mur
     {
+        public NiezniszczalnyMur(short _posX, short _posY) : base(_posX, _posY)
+        {
+            Size = 1;
+        }
     }
 }

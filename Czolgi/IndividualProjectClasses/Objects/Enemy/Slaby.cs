@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace IndividualProjectClasses.Objects.Enemy
 {
-    class Slaby : Czolg
+    class Slaby : WrogiCzolg
     {
+        public Slaby(short posX, short posY) : base(posX, posY)
+        {
+        }
     }
 }

@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace IndividualProjectClasses.Helpers
 {
-    public class Level
+    class Points
     {
-        #region private fields
-
-        private double Difficulty { get; set; }
-        private int LevelNumber { get; set; }
-
-        #endregion
     }
 }

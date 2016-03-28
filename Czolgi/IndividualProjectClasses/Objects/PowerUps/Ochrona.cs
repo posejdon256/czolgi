@@ -8,5 +8,8 @@ namespace IndividualProjectClasses.Objects.PowerUps
 {
     class Ochrona : PowerUp
     {
+        public Ochrona(short posX, short posY) : base(posX, posY)
+        {
+        }
     }
 }

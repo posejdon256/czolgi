@@ -8,5 +8,8 @@ namespace IndividualProjectClasses.Objects.Enemy
 {
     class Zaglada : WrogiCzolg
     {
+        public Zaglada(short posX, short posY) : base(posX, posY)
+        {
+        }
     }
 }

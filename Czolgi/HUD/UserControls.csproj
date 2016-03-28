@@ -81,6 +81,12 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IndividualProjectClasses\IndividualProjectClasses.csproj">
+      <Project>{082cee6f-dfc1-49c6-a1ca-88246d680d09}</Project>
+      <Name>IndividualProjectClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
