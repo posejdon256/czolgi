@@ -24,5 +24,12 @@ namespace Czolgi
         {
             InitializeComponent();
         }
+        #region public methods
+        /// <summary>
+        /// To się wydarzy po kliknięciu "StartGame" w Main Menu
+        /// </summary>
+        public void StartGame()
+        { }
+        #endregion
     }
 }

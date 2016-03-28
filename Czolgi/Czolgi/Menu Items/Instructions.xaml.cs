@@ -23,5 +23,12 @@ namespace Czolgi.Menu_Items
         {
             InitializeComponent();
         }
+        #region public methods
+        /// <summary>
+        /// Tu sie dzieje wszystko co potrzebne w tym xamlu
+        /// </summary>
+        public void ShowInstruciotns()
+        { }
+        #endregion
     }
 }

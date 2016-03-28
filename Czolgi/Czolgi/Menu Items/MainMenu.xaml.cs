@@ -23,5 +23,32 @@ namespace Czolgi.Menu_Items
         {
             InitializeComponent();
         }
+        #region public methods
+        /// <summary>
+        /// Pokazuje XAMLa z instrukcjami
+        /// </summary>
+        public void ShowInstructions()
+        { }
+        /// <summary>
+        /// Pokazuje XAMLa z Best Scores
+        /// </summary>
+        public void ShowBestScores()
+        { }
+        /// <summary>
+        /// Wyłącza grę
+        /// </summary>
+        public void TurnOff()
+        { }
+        /// <summary>
+        /// Otwera XAMLa z ustawieniami
+        /// </summary>
+        public void StartSettings()
+        { }
+        /// <summary>
+        /// Rozpoczyna grę
+        /// </summary>
+        public void StartGame()
+        { }
+        #endregion
     }
 }

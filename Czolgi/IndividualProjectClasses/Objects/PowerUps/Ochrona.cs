@@ -11,5 +11,10 @@ namespace IndividualProjectClasses.Objects.PowerUps
         public Ochrona(short posX, short posY) : base(posX, posY)
         {
         }
+        #region public methods
+
+
+
+        #endregion
     }
 }
