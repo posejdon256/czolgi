@@ -17,8 +17,11 @@ namespace IndividualProjectClasses.Objects
         { }
         #endregion
         #region private methods
+
         private Shot Shot()
-        { }
+        {
+            return null;
+        }
         #endregion
     }
 }
