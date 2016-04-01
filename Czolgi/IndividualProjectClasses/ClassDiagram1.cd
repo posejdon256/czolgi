@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="IndividualProjectClasses.Game">
+    <Position X="30" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAQAAAAAAAAAAAAAAAAAAAAAAACAAABAAgAAAg=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Helpers.AnimationHelper">
+    <Position X="30" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\AnimationHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Helpers.FileHelper">
+    <Position X="33.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAgAAAAAgEAAAAAgA=</HashCode>
+      <FileName>Helpers\FileHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Helpers.Level">
+    <Position X="31.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\Level.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Helpers.Points">
+    <Position X="33.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABEAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Helpers\Points.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Helpers.Settings">
+    <Position X="30" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAIAAAADACAAAAAAAA=</HashCode>
+      <FileName>Helpers\Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Helpers.SoundHelper">
+    <Position X="31.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\SoundHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.MainMenu.BestScores">
+    <Position X="31.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAgAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>MainMenu\BestScores.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.Czolg">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Czolg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.Element">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAgAAAAAAAwAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Element.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.Lisc">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Lisc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.Mur">
+    <Position X="27.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Mur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.NiezniszczalnyMur">
+    <Position X="27.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\NiezniszczalnyMur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.Orzel">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Orzel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.PowerUp">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\PowerUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.Shot">
+    <Position X="23" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Shot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.Enemy.Niszczyciel">
+    <Position X="11.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Enemy\Niszczyciel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.Enemy.Normalny">
+    <Position X="14" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Enemy\Normalny.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.Enemy.Silny">
+    <Position X="5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Enemy\Silny.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.Enemy.Slaby">
+    <Position X="7.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Enemy\Slaby.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.Enemy.WrogiCzolg">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Enemy\WrogiCzolg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.Enemy.Zaglada">
+    <Position X="9.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Enemy\Zaglada.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.PowerUps.Granat">
+    <Position X="18.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\PowerUps\Granat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.PowerUps.Ochrona">
+    <Position X="20.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\PowerUps\Ochrona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.PowerUps.Zamrozenie">
+    <Position X="16.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\PowerUps\Zamrozenie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndividualProjectClasses.Objects.PowerUps.Zycie">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\PowerUps\Zycie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
