@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88762299-f004-45d6-87b2-87d97fd7228e}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>CzolgiUML</Name>
+    <RootNamespace>CzolgiUML</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="czolgiUML.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="czolgiUML.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>czolgiUML.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\CzolgiUML.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Czolgi\Czolgi.csproj">
+      <Name>Czolgi</Name>
+      <Project>{001da606-16ff-4458-8a16-5f7a4770f507}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\HUD\UserControls.csproj">
+      <Name>UserControls</Name>
+      <Project>{7c3a5f53-dff4-4844-9b4e-c88ad5a94a3d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\IndividualProjectClasses\IndividualProjectClasses.csproj">
+      <Name>IndividualProjectClasses</Name>
+      <Project>{082cee6f-dfc1-49c6-a1ca-88246d680d09}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
