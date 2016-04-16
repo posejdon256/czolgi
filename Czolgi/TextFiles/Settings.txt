@@ -1,0 +1,6 @@
+Gora;W
+Dol;S
+Lewo;A
+Prawo;D
+Strzal;Space
+Muzyka;tak

@@ -1,0 +1,4 @@
+1;Ania;19
+2;Ula;15
+3;Robert;12
+4;Kazio;9
