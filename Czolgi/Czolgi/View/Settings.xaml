@@ -1,0 +1,45 @@
+﻿<Window x:Class="Czolgi.View.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:auto="clr-namespace:WpfControls;assembly=WpfControls"
+        xmlns:local="clr-namespace:Czolgi.View"
+        mc:Ignorable="d"
+        Title="Settings" Height="300" Width="300" WindowStyle="None" WindowState="Maximized">
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image x:Name="ImageArrow" Cursor="Hand" MouseUp="ImageArrow_OnMouseUp"  Source="/Czolgi;component/Resources/arrows.png"  HorizontalAlignment="Left" Height="100" VerticalAlignment="Bottom" Width="100" Grid.Column="0" Grid.Row="7"/>
+        <Button x:Name="ButtonSubmit" Content="Potwierdź" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Grid.Row="7" Grid.Column="2" Click="ButtonSubmit_Click"/>
+        <Label x:Name="LabelTop" Content="Poruszanie w górę:" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>
+        <auto:AutoCompleteTextBox Name="autoCompleteTop"  Width="100" Height="50" Background="White" Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+
+        <Label x:Name="LabelBottom" Content="Poruszanie w dół:" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>
+        <auto:AutoCompleteTextBox Name="autoCompleteBottom"  Width="100" Height="50" Background="White" Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+
+        <Label x:Name="LabelLeft" Content="Poruszanie w lewo:" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>
+        <auto:AutoCompleteTextBox Name="autoCompleteLeft"  Width="100" Height="50" Background="White" Grid.Row="3" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+
+        <Label x:Name="LabelRight" Content="Poruszanie w prawo:" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>
+        <auto:AutoCompleteTextBox Name="autoCompleteRight"  Width="100" Height="50" Background="White" Grid.Row="4" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+
+        <Label x:Name="LabelShot" Content="Strzał:" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Top" Foreground="White" FontSize="29.333"/>
+        <auto:AutoCompleteTextBox Name="autoCompleteShot"  Width="100" Height="50" Background="White" Grid.Row="5" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+    
+        <CheckBox Name="soundCheckBox" Content="Muzyka" Foreground="White"  Grid.Row="6" Grid.Column="1" FontSize="29.333"/>
+    </Grid>
+</Window>
