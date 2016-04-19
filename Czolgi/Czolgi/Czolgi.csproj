@@ -143,9 +143,19 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\mur.png" />
+    <Resource Include="Resources\niezniszczalnyMur.png" />
+    <Resource Include="Resources\niszczyciel.png" />
+    <Resource Include="Resources\normalny.png" />
+    <Resource Include="Resources\pocisk.png" />
+    <Resource Include="Resources\powerUp.png" />
+    <Resource Include="Resources\silny.png" />
+    <Resource Include="Resources\slaby.png" />
+    <Resource Include="Resources\zaglada.png" />
     <Resource Include="Resources\arrows.png" />
     <Resource Include="Resources\czolg.png" />
     <Resource Include="Resources\flame.gif" />
+    <Resource Include="Resources\lisc.png" />
     <Content Include="Resources\MenuBackground.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
