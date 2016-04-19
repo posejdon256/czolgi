@@ -23,13 +23,33 @@ namespace Czolgi.View
         public Game()
         {
             InitializeComponent();
+            StartGame();
         }
         #region public methods
         /// <summary>
         /// To się wydarzy po kliknięciu "StartGame" w Main Menu
         /// </summary>
         public void StartGame()
-        { }
+        {
+            for (int i = 0; i < 39; i++)
+            {
+                ColumnDefinition cd = new ColumnDefinition();
+                cd.Width = new GridLength(1, GridUnitType.Star);
+                gameGrid.ColumnDefinitions.Add(cd);
+
+                RowDefinition rd = new RowDefinition();
+                rd.Height = new GridLength(1, GridUnitType.Star);
+                gameGrid.RowDefinitions.Add(rd);
+            }
+            for(int i = 0; i < 39; i ++)
+            {
+                for(int j= 0; j < 39; j ++)
+                {
+                    Image im = new Image();
+                    im.Source = "/Czolgi;component/Resources/arrows.png"
+                }
+            }
+        }
         #endregion
     }
 }

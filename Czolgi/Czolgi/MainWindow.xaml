@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:gif="http://wpfcontrols.com/"
         xmlns:local="clr-namespace:Czolgi"
         mc:Ignorable="d"
         Title="MainMenu" Height="300" Width="300" WindowStyle="None" WindowState="Maximized">
@@ -35,9 +35,9 @@
         <Button x:Name="ButtonPlay" Click="ButtonPlay_OnClick" Grid.Row="1" Cursor="Hand"  Grid.Column="1"  Background="Black" BorderBrush="#FFF7F7F7" Foreground="White" FontSize="29.333" FontFamily="Impact" Content="GRAJ"/>
             <Button x:Name="ButtonInstructions" Click="ButtonInstructions_OnClick"  Grid.Row="3" Cursor="Hand"  Grid.Column="1"  Background="Black" BorderBrush="#FFF7F7F7" Foreground="White" FontSize="29.333" FontFamily="Impact" Content="INSTRUKCJE"/>
         <Button x:Name="ButtonSettings" Click="ButtonSettings_OnClick" Grid.Row="5" Cursor="Hand" Grid.Column="1"  Background="Black" BorderBrush="#FFF7F7F7" Foreground="White" FontSize="29.333" FontFamily="Impact" Content="USTAWIENIA"/>
-         <Image gif:ImageBehavior.AnimatedSource="Resources/flame.gif" Grid.ColumnSpan="3" Grid.RowSpan="5"  Grid.Row="6" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="400"/>
+         <!--<Image gif:ImageBehavior.AnimatedSource="Resources/flame.gif" Grid.ColumnSpan="3" Grid.RowSpan="5"  Grid.Row="6" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="400"/>
         <Image gif:ImageBehavior.AnimatedSource="Resources/flame.gif" Grid.ColumnSpan="3" Grid.RowSpan="4"  Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="300"/>
-        <Image gif:ImageBehavior.AnimatedSource="Resources/flame.gif" Grid.Column="2" Grid.RowSpan="4"  Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="200"/>
+        <Image gif:ImageBehavior.AnimatedSource="Resources/flame.gif" Grid.Column="2" Grid.RowSpan="4"  Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="200"/>-->
 
         <Button x:Name="ButtonScores" Click="ButtonScores_OnClick" Grid.Row="7" Cursor="Hand" Grid.Column="1" Foreground="White" FontSize="29.333" FontFamily="Impact" Content="LISTA ZWYCIĘZCÓW" Background="Black" BorderBrush="#FFF7F7F7"/>
             <!--<Image x:Name="ImageTank" HorizontalAlignment="Left" Height="200" Margin="10,0,0,5" VerticalAlignment="Bottom" Grid.RowSpan="3" Source="Resources/czolg.png" Grid.ColumnSpan="2" Grid.Row="8"/>-->
