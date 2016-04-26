@@ -41,12 +41,18 @@ namespace Czolgi.View
                 rd.Height = new GridLength(1, GridUnitType.Star);
                 gameGrid.RowDefinitions.Add(rd);
             }
-            for(int i = 0; i < 39; i ++)
+            for (int i = 0; i < 39; i++)
             {
-                for(int j= 0; j < 39; j ++)
+                for (int j = 0; j < 39; j++)
                 {
+                    BitmapImage bim = new BitmapImage(new Uri(System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName + @"\Resources\mur.png", UriKind.Absolute));
                     Image im = new Image();
-                    im.Source = "/Czolgi;component/Resources/arrows.png"
+                    im.Source = bim;
+                    Grid.SetColumn(im, i);
+                    Grid.SetRow(im, j);
+                    im.Height = 100;
+                    im.Width = 100;
+                    MainGameCanvas.Children.Add(im);
                 }
             }
         }

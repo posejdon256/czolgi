@@ -8,6 +8,6 @@ namespace Czolgi.Controllers
 {
     internal static class LoadBoard
     {
-
+       // public Canvas
     }
 }

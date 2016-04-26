@@ -151,7 +151,9 @@
     <Resource Include="Resources\silny.png" />
     <Resource Include="Resources\slaby.png" />
     <Resource Include="Resources\zaglada.png" />
-    <Resource Include="Resources\arrows.png" />
+    <Resource Include="Resources\arrows.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\czolg.png" />
     <Resource Include="Resources\flame.gif" />
     <Resource Include="Resources\lisc.png" />
