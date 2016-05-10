@@ -92,6 +92,25 @@ namespace IndividualProjectClasses.Helpers
             fs.Close();
             return ret;
         }
+
+        /// <summary>
+        /// Pobiera mape czołgów
+        /// </summary>
+        /// <returns></returns>
+        public static string[][] GetMap()
+        {
+            FileStream fs = new FileStream(Path.Combine(System.IO.Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName,
+          @"TextFiles\Board1.txt"), FileMode.Open);
+            StreamReader sr = new StreamReader(fs, Encoding.GetEncoding("ISO-8859-2"));
+            List<string[]> rowsList = new List<string[]>();
+            while (!sr.EndOfStream)
+            {
+                string[] help = sr.ReadLine().Split(';');
+                rowsList.Add(help);
+            }
+            fs.Close();
+            return rowsList.ToArray();
+        }
         #endregion
     }
 }

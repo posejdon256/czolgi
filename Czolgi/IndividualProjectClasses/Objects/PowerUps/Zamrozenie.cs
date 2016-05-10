@@ -8,7 +8,7 @@ namespace IndividualProjectClasses.Objects.PowerUps
 {
     class Zamrozenie : PowerUp
     {
-        public Zamrozenie(short posX, short posY) : base(posX, posY)
+        public Zamrozenie(short posX, short posY, int _ElNumber) : base(posX, posY, _ElNumber)
         {
         }
     }

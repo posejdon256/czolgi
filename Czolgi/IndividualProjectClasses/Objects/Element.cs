@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media.Imaging;
 
 namespace IndividualProjectClasses.Objects
 {
-    public class Element
+    public abstract class Element
     {
         #region private fields
 
         internal Int16 Size { get; set; }
-        private Int16 PosX { get; set; }
-        private Int16 PosY { get; set; }
+        public Int16 PosX { get; set; }
+        public Int16 PosY { get; set; }
+        public BitmapImage ImagePath { get; set; }
 
         #endregion
 

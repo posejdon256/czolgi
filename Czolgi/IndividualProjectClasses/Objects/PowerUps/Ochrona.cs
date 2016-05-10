@@ -8,7 +8,7 @@ namespace IndividualProjectClasses.Objects.PowerUps
 {
     class Ochrona : PowerUp
     {
-        public Ochrona(short posX, short posY) : base(posX, posY)
+        public Ochrona(short posX, short posY, int _ElNumber) : base(posX, posY, _ElNumber)
         {
         }
         #region public methods

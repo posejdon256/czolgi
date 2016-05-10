@@ -10,7 +10,7 @@ namespace IndividualProjectClasses.Objects.PowerUps
     {
         #region private fields
         #endregion
-        public Granat(short posX, short posY) : base(posX, posY)
+        public Granat(short posX, short posY, int _ElNumber) : base(posX, posY,_ElNumber)
         {
         }
         #region public methods

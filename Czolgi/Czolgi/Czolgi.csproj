@@ -70,6 +70,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controllers\ImageController.cs" />
     <Compile Include="Controllers\LoadBoard.cs" />
     <Compile Include="View\Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
