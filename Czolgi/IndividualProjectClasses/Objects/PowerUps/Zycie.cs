@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace IndividualProjectClasses.Objects.PowerUps
 {
-    class Zycie : Element
+    class Zycie : PowerUp
     {
-        public Zycie(short posX, short posY) : base(posX, posY)
+        public Zycie(short posX, short posY, int _ElNumber) : base(posX, posY, _ElNumber)
         {
         }
     }

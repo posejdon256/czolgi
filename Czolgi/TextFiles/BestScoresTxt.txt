@@ -1,4 +1,12 @@
-1;Ania;19
-2;Ula;15
-3;Robert;12
-4;Kazio;9
+PaweÄšÂ;2400
+New player;900
+Ania;900
+Ania;100
+Ania;19
+Ula;15
+Robert;12
+Kazio;9
+New player;0
+Ziomeczek;0
+;0
+;0

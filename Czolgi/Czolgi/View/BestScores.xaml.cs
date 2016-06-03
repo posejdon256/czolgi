@@ -22,7 +22,6 @@ namespace Czolgi.View
     {
         public class DataObject
         {
-            public string position { get; set; }
             public string points { get; set; }
             public string user { get; set; }
         }
@@ -41,7 +40,7 @@ namespace Czolgi.View
             var list = new ObservableCollection<DataObject>();
             string[][] scores = IndividualProjectClasses.Helpers.FileHelper.GetBestScore();
             for (int i = 0; i < scores.GetLength(0); i++)
-                list.Add(new DataObject() { position = scores[i][0],user=scores[i][1],points=scores[i][2] });
+                list.Add(new DataObject() { user=scores[i][0],points=scores[i][1] });
             this.dataGrid1.ItemsSource = list;
             dataGrid1.Items.Refresh();
         }

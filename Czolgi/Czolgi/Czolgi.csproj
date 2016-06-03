@@ -39,6 +39,7 @@
       <HintPath>..\packages\MahApps.Metro.1.2.4.0\lib\net45\MahApps.Metro.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -70,8 +71,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controllers\EndController.cs" />
+    <Compile Include="Controllers\EnemyTankController.cs" />
+    <Compile Include="Controllers\HUDController.cs" />
     <Compile Include="Controllers\ImageController.cs" />
+    <Compile Include="Controllers\KeyController.cs" />
+    <Compile Include="Controllers\LeafController.cs" />
     <Compile Include="Controllers\LoadBoard.cs" />
+    <Compile Include="Controllers\MyTankController.cs" />
+    <Compile Include="Controllers\UpdateElements.cs" />
+    <Compile Include="Helpers\PointsHelper.cs" />
     <Compile Include="View\Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
@@ -158,6 +167,7 @@
     <Resource Include="Resources\czolg.png" />
     <Resource Include="Resources\flame.gif" />
     <Resource Include="Resources\lisc.png" />
+    <Resource Include="Resources\eagle.png" />
     <Content Include="Resources\MenuBackground.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

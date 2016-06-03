@@ -10,13 +10,13 @@ namespace Czolgi.Controllers
 {
     internal static class LoadBoard
     {
-        internal static void LoadElements(ref Element[,] elementsTable)
+        internal static void LoadElements(ref Element[,] elementsTable, int level)
         {
-            string[][] map = FileHelper.GetMap();
+            string[][] map = FileHelper.GetMap(level);
             elementsTable = new Element[39,39];
             for(int i=0; i < 39; i ++)
                 for (int j = 0; j < 39; j ++)
-                   elementsTable[j,i]=Factory.Get(map[i][j], (short)i, (short)j);
+                   elementsTable[i,j]=Factory.Get(map[i][j], (short)i, (short)j);
         }
     }
 }

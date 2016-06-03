@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="Game.cs" />
     <Compile Include="Helpers\AnimationHelper.cs" />
+    <Compile Include="Helpers\BitmapFactory.cs" />
     <Compile Include="Helpers\Factory.cs" />
     <Compile Include="Helpers\FileHelper.cs" />
     <Compile Include="Helpers\Points.cs" />

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
+using IndividualProjectClasses.Helpers;
 
 namespace IndividualProjectClasses.Objects.Enemy
 {
@@ -11,10 +12,11 @@ namespace IndividualProjectClasses.Objects.Enemy
     {
         public Niszczyciel(short posX, short posY, int _direction) : base(posX, posY, _direction)
         {
-            string help =
-    System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +
-    @"\Resources\";
-            ImagePath = new BitmapImage(new Uri(help + "normalny.png", UriKind.Absolute));
+            ImagePath = BitmapFactory.bitmaps["niszczyciel"];
+            armor = 10;
+            speed = 0.75;
+            interval = 0.75;
+            difficulty = 5;
         }
     }
 }

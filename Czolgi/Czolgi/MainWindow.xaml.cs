@@ -24,9 +24,6 @@ namespace Czolgi
         public MainWindow()
         {
             InitializeComponent();
-            MediaPlayer.Open(new Uri("Resources\\MenuBackground.mp3",UriKind.Relative));
-           
-            MediaPlayer.Play();
         }
         #region public methods
 

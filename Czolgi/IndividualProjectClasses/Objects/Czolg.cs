@@ -1,27 +1,50 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Media.Imaging;
+using IndividualProjectClasses.Helpers;
 
 namespace IndividualProjectClasses.Objects
 {
     public class Czolg : Element
     {
         public int direction;
+        public double speed;
+        public double interval;
+        public double armor;
+        public DateTime lastShot;
+        public DateTime lastMove;
+        public DateTime intensibility;
+        public int difficulty;
         public Czolg(short posX, short posY, int _direction) : base(posX, posY)
         {
             direction = _direction;
             Size = 3;
-            string help =
-                System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +
-                @"\Resources\";
-            ImagePath = new BitmapImage(new Uri(help + "czolg.png", UriKind.Absolute));
+            ImagePath = BitmapFactory.bitmaps["czolg"];
+            armor = 3;
+            lastMove = DateTime.Now;
+            speed = 1;
         }
         #region public methods
-        public void MoveMe()
-        { }
+
+        public int[] MoveMe(Element elementOnMyWay, ref Element[,] elements)
+        {
+            int lastPx = PosX, lastPy = PosY;
+            if (elementOnMyWay == null)
+            {
+                if (direction == 0)
+                    PosX --;
+                else if (direction == 1)
+                    PosY --;
+                else if (direction == 2)
+                    PosX++;
+                else
+                    PosY ++;
+                elements[lastPx, lastPy] = null;
+                elements[PosX, PosY] = this;
+                return new int[] {lastPx,lastPy};
+            }
+            direction = (direction + 1)%4;
+            return null;
+          
+        }
         #endregion
         #region private methods
 

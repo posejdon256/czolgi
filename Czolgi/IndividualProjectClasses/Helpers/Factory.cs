@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using IndividualProjectClasses.Objects;
 using IndividualProjectClasses.Objects.Enemy;
+using IndividualProjectClasses.Objects.PowerUps;
 
 namespace IndividualProjectClasses.Helpers
 {
@@ -18,18 +19,30 @@ namespace IndividualProjectClasses.Helpers
                     return new NiezniszczalnyMur(x,y);
                 case "m":
                     return new Mur(x,y);
-                case "pg1":
-                    return new PowerUp(x,y,1);
-                case "pg2":
-                    return new PowerUp(x, y, 2);
-                case "pg3":
-                    return new PowerUp(x, y, 3);
-                case "pg4":
-                    return new PowerUp(x, y, 4);
+                case "O":
+                    return new Orzel(x, y);
             }
             if (name[0] == 'c')
                 return GetTank(name, x, y);
+            if (name[0] == 'p')
+                return GetPowerUp(name, x, y);
             return null;
+        }
+
+        private static Element GetPowerUp(string name, short x, short y)
+        {
+            switch (name[2])
+            {
+                case '1':
+                    return new Granat(x, y, 0);
+                case '2':
+                    return new Ochrona(x, y, 0);
+                case '3':
+                    return new Zamrozenie(x, y, 0);
+                case '4':
+                    return new Zycie(x, y, 0);
+            }
+            return new Czolg(x, y, 0);
         }
 
         private static Element GetTank(string name, short x, short y)
@@ -51,7 +64,6 @@ namespace IndividualProjectClasses.Helpers
             }
             return  new Czolg(x,y,Direction(name[2]));
         }
-
         private static int Direction(char k)
         {
             switch (k)

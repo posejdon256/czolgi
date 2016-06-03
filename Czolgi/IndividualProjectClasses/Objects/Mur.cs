@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
+using IndividualProjectClasses.Helpers;
 
 namespace IndividualProjectClasses.Objects
 {
@@ -12,10 +13,7 @@ namespace IndividualProjectClasses.Objects
         public Mur(Int16 _posX, Int16 _posY):base(_posX,_posY)
         {
             Size = 1;
-            ImagePath =
-                new BitmapImage(new Uri(
-                    System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +
-                    @"\Resources\mur.png", UriKind.Absolute));
+            ImagePath = BitmapFactory.bitmaps["mur"];
         }
     }
 }

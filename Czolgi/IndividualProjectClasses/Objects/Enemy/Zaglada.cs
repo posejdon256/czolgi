@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
+using IndividualProjectClasses.Helpers;
 
 namespace IndividualProjectClasses.Objects.Enemy
 {
@@ -11,10 +12,11 @@ namespace IndividualProjectClasses.Objects.Enemy
     {
         public Zaglada(short posX, short posY, int _direction) : base(posX, posY, _direction)
         {
-            string help =
-    System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +
-    @"\Resources\";
-            ImagePath = new BitmapImage(new Uri(help + "zaglada.png", UriKind.Absolute));
+            ImagePath = BitmapFactory.bitmaps["zaglada"];
+            armor = 15;
+            speed = 0.5;
+            interval = 0.5;
+            difficulty = 10;
         }
     }
 }

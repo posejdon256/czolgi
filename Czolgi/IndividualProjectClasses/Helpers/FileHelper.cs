@@ -11,12 +11,19 @@ namespace IndividualProjectClasses.Helpers
     public static class FileHelper
     {
         #region public methods
+
         /// <summary>
         /// Zapisuje tabele wyników w pliku
         /// </summary>
         /// <param name="scoresTable"></param>
-        public static void SetScores(string[,] scoresTable)
-        { }
+        public static void SetScores(string[][] scoresTable)
+        {
+            string text = "";
+            for (int i = 0; i < scoresTable.GetLength(0); i++)
+                text += (scoresTable[i][0] + ";" + scoresTable[i][1]) + Environment.NewLine;
+            File.WriteAllText(Path.Combine(System.IO.Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName,
+        @"TextFiles\BestScoresTxt.txt"), text);
+        }
 
         /// <summary>
         /// Wpisuje ustawienie do pliku
@@ -97,10 +104,18 @@ namespace IndividualProjectClasses.Helpers
         /// Pobiera mape czołgów
         /// </summary>
         /// <returns></returns>
-        public static string[][] GetMap()
+        public static string[][] GetMap(int level)
         {
-            FileStream fs = new FileStream(Path.Combine(System.IO.Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName,
-          @"TextFiles\Board1.txt"), FileMode.Open);
+            FileStream fs;
+            if(level == 1)
+                fs = new FileStream(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName,
+              @"TextFiles\Board3.txt"), FileMode.Open);
+            else if(level == 2)
+                fs = new FileStream(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName,
+            @"TextFiles\Board2.txt"), FileMode.Open);
+            else
+                fs = new FileStream(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName,
+            @"TextFiles\Board1.txt"), FileMode.Open);
             StreamReader sr = new StreamReader(fs, Encoding.GetEncoding("ISO-8859-2"));
             List<string[]> rowsList = new List<string[]>();
             while (!sr.EndOfStream)
