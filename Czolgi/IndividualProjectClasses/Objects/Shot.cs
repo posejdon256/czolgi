@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 using IndividualProjectClasses.Helpers;
 
 namespace IndividualProjectClasses.Objects
@@ -10,6 +11,8 @@ namespace IndividualProjectClasses.Objects
     public class Shot : Element
     {
         public int direction;
+        //private MediaPlayer MediaPlayerShot = new MediaPlayer();
+      
         public Shot(short posX, short posY, int _direction) : base(posX, posY)
         {
             Size = 1;
@@ -25,6 +28,9 @@ namespace IndividualProjectClasses.Objects
 
         public int[] Fly(Element elementonMyWay, ref Element[,] elements,ref List<Shot> shots, ref List<Czolg> tanks, ref int points)
         {
+             //MediaPlayer MediaPlayerBlast = new MediaPlayer();
+             //   MediaPlayerBlast.Open(new Uri(System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +
+              //      @"\Resources\" + "blast.mp3", UriKind.Relative));
             if (elementonMyWay == null)
             {
                 int lastPx = PosX, lastPy = PosY;
@@ -65,6 +71,7 @@ namespace IndividualProjectClasses.Objects
                 help.armor--;
                 if (help.armor == 0)
                 {
+                   // MediaPlayerBlast.Play();
                     tanks.Remove(elementonMyWay as Czolg);
                     elements[elementonMyWay.PosX, elementonMyWay.PosY] = null;
                 }

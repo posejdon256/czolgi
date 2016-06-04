@@ -18,6 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TextFiles\Instructions.txt = TextFiles\Instructions.txt
 		Sounds\MenuBackground.mp3 = Sounds\MenuBackground.mp3
 		TextFiles\Settings.txt = TextFiles\Settings.txt
+		Sounds\shot.mp3 = Sounds\shot.mp3
 	EndProjectSection
 EndProject
 Global

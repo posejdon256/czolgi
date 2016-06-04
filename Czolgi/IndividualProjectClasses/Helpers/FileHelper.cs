@@ -109,13 +109,13 @@ namespace IndividualProjectClasses.Helpers
             FileStream fs;
             if(level == 1)
                 fs = new FileStream(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName,
-              @"TextFiles\Board3.txt"), FileMode.Open);
+              @"TextFiles\Board1.txt"), FileMode.Open);
             else if(level == 2)
                 fs = new FileStream(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName,
             @"TextFiles\Board2.txt"), FileMode.Open);
             else
                 fs = new FileStream(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName,
-            @"TextFiles\Board1.txt"), FileMode.Open);
+            @"TextFiles\Board3.txt"), FileMode.Open);
             StreamReader sr = new StreamReader(fs, Encoding.GetEncoding("ISO-8859-2"));
             List<string[]> rowsList = new List<string[]>();
             while (!sr.EndOfStream)

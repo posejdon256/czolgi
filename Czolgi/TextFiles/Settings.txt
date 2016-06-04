@@ -2,5 +2,5 @@ Gora;W
 Dol;S
 Lewo;A
 Prawo;D
-Strzal;Space
-Muzyka;nie
+Strzal;K
+Muzyka;tak

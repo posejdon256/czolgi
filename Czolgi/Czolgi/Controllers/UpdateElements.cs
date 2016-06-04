@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Markup;
+using System.Windows.Media;
 using IndividualProjectClasses.Helpers;
 using IndividualProjectClasses.Objects;
 using Czolgi.Helpers;
@@ -13,8 +14,11 @@ namespace Czolgi.Controllers
 {
     internal class UpdateElements
     {
+        //private static MediaPlayer MediaPlayerBlast = new MediaPlayer();
         internal static List<int[]> ImagesToUpdate(ref Element[,] elements, ref List<Czolg> tanks, ref List<Shot> shots, ref int poitsInGame )
         {
+            //MediaPlayerBlast.Open(new Uri(System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +
+            //        @"\Resources\" + "blast.mp3", UriKind.Relative));
             List<int[]> points = new List<int[]>();
             for (int i = 0; i < tanks.Count; i ++)
             {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Czolgi.Helpers;
@@ -47,6 +48,12 @@ namespace Czolgi.Controllers
                 elements[help[0], help[1]] = null;
                 tank.armor++;
             }
+            else if (elements[help[0], help[1]] != null &&
+                    elements[help[0], help[1]].GetType().FullName.Contains("Zamrozenie"))
+            {
+                elements[help[0], help[1]] = null;
+                Thread.Sleep(10000);
+            }
             int[] helpTab = tank.MoveMe(elements[help[0],help[1]], ref elements);
             if (helpTab != null)
                 points.Add(helpTab);
@@ -58,7 +65,7 @@ namespace Czolgi.Controllers
         {
             Shot shot;
             int px = tank.PosX, py = tank.PosY;
-            if (args.Key != Key.Space)
+            if (args.Key != (Key)Enum.Parse(typeof(Key), settings[1][4]))
                 return null;
             if (tank.direction == 0)
                 shot = new Shot((short)(px-1), (short)py,0);

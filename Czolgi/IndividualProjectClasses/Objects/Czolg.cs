@@ -20,7 +20,7 @@ namespace IndividualProjectClasses.Objects
             ImagePath = BitmapFactory.bitmaps["czolg"];
             armor = 3;
             lastMove = DateTime.Now;
-            speed = 1;
+            speed = 0.5;
         }
         #region public methods
 
